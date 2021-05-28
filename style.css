@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.65rem;
+    line-height: 1.8;
+}
+
+.cardContainer {
+    width: 700px;
+    display: flex;
+}
+
+.card {
+    padding: 30px;
+}
+
+.icon {
+    width: 50px;
+}
+
+.card:nth-of-type(1) {
+    background-color: hsl(31, 77%, 52%);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.card:nth-of-type(2) {
+    background-color: hsl(184, 100%, 22%);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.card:nth-of-type(3) {
+    background-color: hsl(179, 100%, 13%);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50px;
+    margin-top: 50px;
+    outline: none;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: #fff;
+}
+
+.card:nth-of-type(1) .btn:hover {
+    color: hsl(31, 77%, 52%);
+}
+
+.card:nth-of-type(2) .btn:hover {
+    color: hsl(184, 100%, 22%);
+}
+
+.card:nth-of-type(3) .btn:hover {
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 700px) {
+    .cardContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
